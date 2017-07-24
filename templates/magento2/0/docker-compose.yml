@@ -1,0 +1,31 @@
+version: '2'
+
+services:
+    web:
+        image: ludersonwebjump/nginx:latest
+        ports:
+            - 80:80
+            - 443:443
+        volumes:
+            - /home/${USER}/projects/${PROJECT}/logs/nginx:/var/log/nginx
+        volumes_from:
+            - php
+        depends_on:
+            - php
+        networks:
+            - front
+            - back
+    php:
+        image: ludersonwebjump/php:latest
+        volumes:
+            - /home/${USER}/projects/${PROJECT}/logs/php:/var/log/php
+            - /home/${USER}/projects/${PROJECT}/src:/var/www/html
+        user: www-data
+        networks:
+            - back
+    
+    networks:
+        front:
+            driver: bridge
+        back:
+            driver: bridge

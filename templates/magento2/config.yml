@@ -1,0 +1,7 @@
+name: Magento2
+description: |
+  Proxy reverso, Webserver
+version: 0.0.1
+category: Proxy, Webserver
+maintainer: "Luderson C Pereira <luderson@gmail.com>"
+license: MIT License
