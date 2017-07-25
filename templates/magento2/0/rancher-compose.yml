@@ -2,5 +2,12 @@
   name: "magento2"
   version: "0.0.1"
   description: "eCommerce powered by Magento 2"
-  uuid: mysql-0
+  uuid: www-data
   minimum_rancher_version: v1.0.0
+  questions:
+    - variable: project
+      description: "Project foder. Please insert the project's name."
+      label: "Project foder"
+      required: true
+      default: magento
+      type: "string"
