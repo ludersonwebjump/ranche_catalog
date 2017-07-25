@@ -1,7 +1,7 @@
-name: Magento2
+name: Magento 2
 description: |
-  Proxy reverso, Webserver
+  An environment to work on your Magento 2 project.
 version: 0.0.1
-category: Proxy, Webserver
-maintainer: "Luderson C Pereira <luderson@gmail.com>"
+category: Ecommerce, Web Store
+maintainer: "Luderson C Pereira <luderson@howmanyjoins.com>"
 license: MIT License
