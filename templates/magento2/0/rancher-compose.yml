@@ -7,12 +7,11 @@
   questions:
     - variable: PROJECT
       description: "Please insert the project's name."
-      label: "Project foder"
+      label: "Project folder"
       required: true
       default: magento
       type: "string"
 
-  questions:
     - variable: USER
       description: "Your OS's user name."
       label: "User name"
