@@ -5,9 +5,17 @@
   uuid: www-data
   minimum_rancher_version: v1.0.0
   questions:
-    - variable: project
-      description: "Project foder. Please insert the project's name."
+    - variable: PROJECT
+      description: "Please insert the project's name."
       label: "Project foder"
       required: true
       default: magento
+      type: "string"
+
+  questions:
+    - variable: USER
+      description: "Your OS's user name."
+      label: "User name"
+      required: true
+      default: webjump
       type: "string"
