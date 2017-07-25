@@ -1,0 +1,6 @@
+.catalog:
+  name: "magento2"
+  version: "v0.0.1"
+  description: "eCommerce powered by Magento 2"
+  uuid: mysql-0
+  minimum_rancher_version: v1.0.0
