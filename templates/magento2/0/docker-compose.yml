@@ -8,8 +8,8 @@ services:
             - 443:443
         volumes:
             - /home/${USER}/projects/${PROJECT}/logs/nginx:/var/log/nginx
-        volumes_from:
-            - php
+            - /home/${USER}/projects/${PROJECT}/src:/var/www/html
+
     php:
         image: ludersonwebjump/php:latest
         user: www-data
