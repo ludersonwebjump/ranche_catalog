@@ -10,8 +10,6 @@ services:
             - /home/${USER}/projects/${PROJECT}/logs/nginx:/var/log/nginx
         volumes_from:
             - php
-        depends_on:
-            - php
     php:
         image: ludersonwebjump/php:latest
         user: www-data
