@@ -13,3 +13,4 @@ services:
         user: www-data
         volumes:
             - /home/${USER}/projects/${PROJECT}/logs/php:/var/log/php
+            - /home/${USER}/projects/${PROJECT}/src:/var/www/html
